@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: "Merriweather", serif;}
+
+@font-face
+{
+   font-family: 'Digital';
+   src: url(../FONTS/digital-7\ \(italic\).ttf);
+}
+
+:root
+{
+   --white: #E7ECEF;
+   --dark-blue: #274C77;
+   --medium-blue: #6096BA;
+   --light-blue: #A3CEF1;
+   --orange: #FFB140;
+   --verde-limao: #b0ca87;
+}
+
+body
+{
+   min-height: 100vh;
+}
+
+.container-geral
+{
+   display: grid;
+   width: 100vw;
+   height: 100vh;
+   grid-template-columns: 2;
+   grid-template-rows: 2;
+   grid-template-areas: 
+   "menu horario"
+   "menu tarefas";
+}
+
+.menu
+{
+   background-color: var(--dark-blue);
+   grid-area: menu;
+   display: flex;
+   flex-direction: column;
+}
+
+.horario
+{
+   background-color: var(--medium-blue);
+   grid-area: horario;
+   height: 25vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.horario h1, .horario p
+{
+   text-align: center;
+   margin-top: 20px;
+}
+
+.horario h1
+{
+   font-size: 3rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tarefas
+{
+   background-color: var(--light-blue);
+   grid-area: tarefas;
+   height: 75vh;
+}
+
+#menu
+{
+   cursor: pointer;
+}
+
+.icone
+{
+   width: 70px;
+}
+
+.menu-fechado {width: 70px;}
+.menu-aberto {width: 350px;}
+
+.estado-menu-fechado {width: calc(100vw - 70px);}
+.estado-menu-aberto {width: calc(100vw - 350px);}
+
+.horas, .minutos, .segundos, .relogio-digital
+{
+   font-size: 3rem;
+   color: var(--verde-limao);
+   font-family: 'Digital', serif;
+   text-shadow: 2px 2px 2px #000;
+}
+
+.data
+{
+   color: var(--white);
+   font-style: italic;
+   text-shadow: 2px 2px 2px #000;
+   font-size: 110%;
+}
+
+.data
+{
+   font-size: 1.5rem;
+}

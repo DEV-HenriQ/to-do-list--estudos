@@ -6,14 +6,39 @@
       <meta name="author" content="Devjh">
       <meta name="description" content="to-do-list">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Minha Agenda</title>
+      <title>Minha Agenda | devjh</title>
+      <link rel="shortcut icon" href="./IMG/calendar-icon.svg" type="image/x-icon">
 
       <!-- CSS -->
-      
+
+      <link rel="stylesheet" href="./CSS/style.css">
+
       <!-- SCRIPTS (NÃO ESQUECER DO ATRIBUTO 'DEFER') -->
-      
+
+      <script src="./JS/openCloseMenu.js" defer></script>
+      <script src="./JS/getCurrentDate.js" defer></script>
+      <script src="./JS/digitalClock.js" defer></script>
    </head>
    <body>
-      
+      <div class="container-geral">
+
+         <div class="menu menu-fechado">
+            <span class="icone" id="menu">
+               <img src="./IMG/menu-icon.svg">
+            </span>
+         </div>
+
+         <div class="horario estado-menu-fechado">
+            <h1>HOJE</h1>
+            <p class="data">
+               <span class="dia-da-semana">[quarta]</span>, <span class="data-de-hoje">[28]</span> de <span class="mes-de-hoje">[fevereiro]</span> de <span class="ano-de-hoje">[2024]</span>
+            </p>
+            <p class="relogio-digital">
+               <span class="horas">[horas]</span> : <span class="minutos">[minutos]</span> : <span class="segundos">[segundos]</span>
+            </p>
+         </div>
+         
+         <div class="tarefas estado-menu-fechado"></div>
+      </div>
    </body>
 </html>
