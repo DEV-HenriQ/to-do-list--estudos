@@ -26,4 +26,22 @@ function takeCurrentHour()
    {
       segundos.innerHTML = '0' + segundos.innerHTML
    }
+
+   /* getCurrentDate.js */
+
+   const dias = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feixa", "Sábado"]
+
+   const meses = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+
+   const diaDaSemana = document.querySelector('.dia-da-semana')
+   const dataDeHoje = document.querySelector('.data-de-hoje')
+   const mesDeHoje = document.querySelector('.mes-de-hoje')
+   const anoDeHoje = document.querySelector('.ano-de-hoje')
+
+   const minhaData2 = new Date()
+
+   diaDaSemana.innerHTML = dias[minhaData2.getDay()]
+   dataDeHoje.innerHTML = minhaData2.getDate()
+   mesDeHoje.innerHTML = meses[minhaData2.getMonth()]
+   anoDeHoje.innerHTML = minhaData2.getFullYear()
 }
