@@ -7,6 +7,7 @@ function openCloseMenu()
    const menuDIV = document.querySelector('.menu')
    const horario = document.querySelector('.horario')
    const tarefas = document.querySelector('.tarefas')
+   const semTexto = document.querySelectorAll('.texto')
 
    if (menuDIV.classList.contains('menu-fechado'))
    {
@@ -19,7 +20,9 @@ function openCloseMenu()
       tarefas.classList.remove('estado-menu-fechado')
       tarefas.classList.add('estado-menu-aberto')
 
-      menuBTN.innerHTML = `<img src="./IMG/close-icon.svg">`
+      menuBTN.children[0].src = "./IMG/arrows-collapse-vertical.svg"
+
+      semTexto.forEach((cada) => cada.classList.remove('sem-texto'))
    }
    else
    {
@@ -32,6 +35,8 @@ function openCloseMenu()
       tarefas.classList.remove('estado-menu-aberto')
       tarefas.classList.add('estado-menu-fechado')
 
-      menuBTN.innerHTML = `<img src="./IMG/menu-icon.svg">`
+      menuBTN.children[0].src = "./IMG/arrows-expand-vertical.svg"
+
+      semTexto.forEach((cada) => cada.classList.add('sem-texto'))
    }
 }
