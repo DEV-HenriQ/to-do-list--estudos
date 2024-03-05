@@ -34,6 +34,7 @@ body
    "menu horario"
    "menu tarefas";
    position: relative;
+   overflow-x: hidden;
 }
 
 .menu
@@ -49,6 +50,7 @@ body
    background-color: var(--medium-blue);
    grid-area: horario;
    height: 25vh;
+   min-height: 231.75px;
    display: flex;
    flex-direction: column;
    justify-content: center;
