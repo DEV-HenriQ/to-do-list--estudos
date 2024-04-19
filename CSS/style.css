@@ -205,7 +205,7 @@ body
 .container-tarefas
 {
    border: 1px solid var(--verde-limao);
-   width: 70%;
+   width: 300px;
    height: 90%;
    border-radius: 10px;
    background-color: var(--dark-blue);
