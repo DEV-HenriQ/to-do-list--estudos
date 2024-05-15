@@ -44,4 +44,6 @@ function takeCurrentHour()
    dataDeHoje.innerHTML = minhaData2.getDate()
    mesDeHoje.innerHTML = meses[minhaData2.getMonth()]
    anoDeHoje.innerHTML = minhaData2.getFullYear()
+
+   pegarTarefas()
 }
