@@ -4,6 +4,11 @@ allMyDiv.forEach(function(cadaDiv)
    cadaDiv.children[1].addEventListener('click', function()
    {
       let valorInput = cadaDiv.children[0].value
+      if (valorInput == false)
+      {
+         alert('IMPOSSÍVEL ADICIONAR TAREFA VAZIA...')
+         return
+      }
       const li = document.createElement('li')
       const span1 = document.createElement('span')
       const span2 = document.createElement('span')
