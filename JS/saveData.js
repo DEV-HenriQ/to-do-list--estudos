@@ -2,6 +2,7 @@ function salvar()
 {
    const popUp = document.querySelector(".pop-up-setTasks").innerHTML
    localStorage.setItem("tarefas", popUp)
+   pegarTarefas()
 }
 
 function recuperar()

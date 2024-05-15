@@ -224,6 +224,13 @@ body
    font-size: 2rem;
 }
 
+.container-tarefas li
+{
+   display: flex;
+   column-gap: 5px;
+   text-transform: uppercase;
+}
+
 .container-tarefas ul li label, .container-tarefas ul li input
 {
    cursor: pointer;

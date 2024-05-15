@@ -22,8 +22,9 @@
       <script src="./JS/addTextToList.js" defer></script>
       <script src="./JS/deleteTask.js" defer></script>
       <script src="./JS/saveData.js" defer></script>
+      <script src="./JS/takingTasksFromLocalStorage.js" defer></script>
    </head>
-   <body onload="recuperar()">
+   <body onload="recuperar(), pegarTarefas()">
       <div class="container-geral">
 
          <nav class="menu menu-fechado">
@@ -51,18 +52,6 @@
          <div class="tarefas estado-menu-fechado">
             <div class="container-tarefas">
                <ul class="minhas-tarefas">
-                  <li>
-                     <input type="checkbox" id="at1">
-                     <label for="at1">Faculdade</label>
-                  </li>
-                  <li>
-                     <input type="checkbox" id="at2">
-                     <label for="at2">Alemão</label>
-                  </li>
-                  <li>
-                     <input type="checkbox" id="at3">
-                     <label for="at3">Inglês</label>
-                  </li>
                </ul>
             </div>
          </div>
@@ -77,9 +66,7 @@
                         <h2>Segunda-feira</h2>
                         <span class="plus">+</span>
                      </div>
-                     <ul class="txt0">
-                        
-                     </ul>
+                     <ul class="txt0"></ul>
                   </div>
                   <div class="input0 hide myDiv">
                      <input class="input-day" type="text" id="input0" placeholder="Max 30 caracteres...">
@@ -91,9 +78,7 @@
                         <h2>Terça-feira</h2>
                         <span class="plus">+</span>
                      </div>
-                     <ul class="txt1">
-                        
-                     </ul>
+                     <ul class="txt1"></ul>
                   </div>
                   <div class="input1 hide myDiv">
                      <input class="input-day" type="text" id="input1" placeholder="Max 30 caracteres...">
@@ -105,9 +90,7 @@
                         <h2>Quarta-feira</h2>
                         <span class="plus">+</span>
                      </div>
-                     <ul class="txt2">
-                        
-                     </ul>
+                     <ul class="txt2"></ul>
                   </div>
                   <div class="input2 hide myDiv">
                      <input class="input-day" type="text" id="input2" placeholder="Max 30 caracteres...">
@@ -119,9 +102,7 @@
                         <h2>Quinta-feira</h2>
                         <span class="plus">+</span>
                      </div>
-                     <ul class="txt3">
-                        
-                     </ul>
+                     <ul class="txt3"></ul>
                   </div>
                   <div class="input3 hide myDiv">
                      <input class="input-day" type="text" id="input3" placeholder="Max 30 caracteres...">
@@ -133,9 +114,7 @@
                         <h2>Sexta-feira</h2>
                         <span class="plus">+</span>
                      </div>
-                     <ul class="txt4">
-                        
-                     </ul>
+                     <ul class="txt4"></ul>
                   </div>
                   <div class="input4 hide myDiv">
                      <input class="input-day" type="text" id="input4" placeholder="Max 30 caracteres...">
@@ -147,9 +126,7 @@
                         <h2>Sábado</h2>
                         <span class="plus">+</span>
                      </div>
-                     <ul class="txt5">
-                        
-                     </ul>
+                     <ul class="txt5"></ul>
                   </div>
                   <div class="input5 hide myDiv">
                      <input class="input-day" type="text" id="input5" placeholder="Max 30 caracteres...">
@@ -161,9 +138,7 @@
                         <h2>Domingo</h2>
                         <span class="plus">+</span>
                      </div>
-                     <ul class="txt6">
-                        
-                     </ul>
+                     <ul class="txt6"></ul>
                   </div>
                   <div class="input6 hide myDiv">
                      <input class="input-day" type="text" id="input6" placeholder="Max 30 caracteres...">
