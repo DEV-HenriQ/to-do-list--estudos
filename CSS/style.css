@@ -328,3 +328,34 @@ body
 
 .hide {display: none;}
 .show {display: flex;}
+
+.apagar-tarefa
+{
+   width: 25px;
+   cursor: pointer;
+}
+
+.calendar ul li
+{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   font-size: 1.2rem;
+   gap: 30px;
+   margin: 5px 0;
+   border-bottom: 1px solid var(--verde-limao);
+   padding: 5px;
+   text-transform: uppercase;
+}
+
+.calendar ul li:hover
+{
+   background-color: #6096BA;
+}
+
+.calendar ul li span
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

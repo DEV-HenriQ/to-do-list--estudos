@@ -11,11 +11,13 @@ buttonsPlus.forEach(function(cada)
    {
       divX.classList.add('show')
       divX.classList.remove('hide')
+      cada.innerHTML = '-'
    }
    else
    {
       divX.classList.add('hide')
       divX.classList.remove('show')
+      cada.innerHTML = '+'
    }
 })
 })
