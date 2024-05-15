@@ -1,4 +1,4 @@
-function apagarTarefa()
+function setarApagarTarefa()
 {
    const allTrash = document.querySelectorAll('.apagar-tarefa')
    allTrash.forEach(function(cadaTrash)
@@ -6,6 +6,7 @@ function apagarTarefa()
       cadaTrash.addEventListener('click', function()
       {
          cadaTrash.parentNode.parentNode.remove()
+         salvar()
       })
    })
 }
