@@ -333,6 +333,7 @@ body
 {
    width: 25px;
    cursor: pointer;
+   z-index: 1;
 }
 
 .calendar ul li

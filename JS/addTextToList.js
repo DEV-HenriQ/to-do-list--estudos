@@ -27,5 +27,6 @@ allMyDiv.forEach(function(cadaDiv)
       cadaDiv.classList.remove('show')
       let titleX = 'title' + cadaDiv.classList[0].slice(5,6)
       document.querySelector(`.${titleX}`).children[1].innerHTML = '+'
+      apagarTarefa()
    })
 })
